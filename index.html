@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    
+    <script src="./Componenti/NavBar.js"></script>
+    <script src="./Componenti/Footer.js"></script>
+    
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./Stili/CardPopover.css" />
+    <link rel="stylesheet" href="./Stili/Footer.css" />
+
+  </head>
+  <body>
+    <nav-bar></nav-bar>
+
+    <header class="banner">
+        <h1>Benvenuto</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, repellendus!</p>
+    </header>
+
+    <div class="cards">
+
+      <button class="card" popovertarget="chi-sono">
+        <h3>Chi sono</h3>
+        <div popover class="popover" id="chi-sono"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem, consequatur.</p></div>
+      </button>
+      
+      <button class="card" popovertarget="materie">
+        <h3>Materie</h3>
+        <div popover class="popover" id="materie"><p>Lorem ipsum dolor sit amet.</p></div>
+      </button>
+
+      <button class="card" popovertarget="info-prezzi">
+        <h3>Info e prezzi</h3>
+        <div popover class="popover" id="info-prezzi"><p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p></div>
+      </button>
+    </div>
+
+    <!--
+
+    -->
+      <footer class="footer">
+        <span>Email: example@mail.it</span>
+        <span>Telefono: +39 123 456 7890</span>
+      </footer>
+    <footer-custom></footer-custom>
+  </body>
+</html>

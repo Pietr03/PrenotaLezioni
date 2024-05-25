@@ -1,0 +1,14 @@
+body{
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.banner {
+    text-align: center;
+    margin: 5px 20px;
+}
+
+h1{
+    color: #059862;
+}
+
