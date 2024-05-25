@@ -1,3 +1,4 @@
+{
 const template = `<link rel="stylesheet" href="./Stili/Footer.css">
 <footer class="footer">
       <span>Email: example@mail.it</span>
@@ -13,3 +14,4 @@ class Footer extends HTMLElement {
     }
 }
 customElements.define("footer-custom", Footer);
+}
