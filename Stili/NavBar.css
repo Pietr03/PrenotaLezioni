@@ -3,6 +3,7 @@
   width: 100%;
   display: flex;
   padding: 3px 6px;
+  max-height: 25px;
 }
 
 .navbar ul {
@@ -30,6 +31,7 @@
 
 .navbar .logo {
   margin: auto 10px;
+  max-width: 25px;
 }
 
 @media (max-width: 400px) {
