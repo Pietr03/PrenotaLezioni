@@ -1,45 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    
-    <script src="./Componenti/NavBar.js"></script>
-    <script src="./Componenti/Footer.js"></script>
-    
+    <title>Sito web</title>
+
+    <link rel="icon" type="image/x-icon" href="Media/logo.png" />
+
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="./Stili/CardPopover.css" />
-    <link rel="stylesheet" href="./Stili/Footer.css" />
-
   </head>
-  <body>
-    <nav-bar></nav-bar>
 
-    <header class="banner">
-        <h1 >Benvenuto</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, repellendus!</p>
-    </header>
+  <body>
+    <div class="navbar">
+      <img
+        class="logo"
+        src="./Media/logo.png"
+        alt="logo"
+        width="25px"
+        height="25px"
+      />
+      <ul>
+        <li id="index">
+          <a href="./index.html">Home</a>
+        </li>
+        <li id="pag1"><a href="./pag1.html">Pag 1</a></li>
+        <li id="pag2"><a href="./pag2.html">Pag 2</a></li>
+      </ul>
+    </div>
+
+    <div class="banner">
+      <h1 class="titolo">Benvenuto</h1>
+      <p>
+        <strong> Lorem </strong>
+        ipsum dolor sit amet consectetur adipisicing elit. Voluptate,
+        repellendus!
+      </p>
+    </div>
 
     <div class="cards">
       <button class="card" popovertarget="chi-sono">
         <h3>Chi sono</h3>
-        <div popover class="popover" id="chi-sono"><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem, consequatur.</p></div>
+        <div popover class="popover" id="chi-sono">
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem,
+            consequatur.
+          </p>
+        </div>
       </button>
-      
+
       <button class="card" popovertarget="materie">
         <h3>Materie</h3>
-        <div popover class="popover" id="materie"><p>Lorem ipsum dolor sit amet.</p></div>
+        <div popover class="popover" id="materie">
+          <p>Lorem ipsum dolor sit amet.</p>
+        </div>
       </button>
 
       <button class="card" popovertarget="info-prezzi">
         <h3>Info e prezzi</h3>
-        <div popover class="popover" id="info-prezzi"><p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p></div>
+        <div popover class="popover" id="info-prezzi">
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+        </div>
       </button>
     </div>
 
-
-
-    <footer-custom></footer-custom>
+    <footer class="footer">
+      <span>
+        <a href="mailto:example@mail.it">Email: example@mail.it</a>
+      </span>
+      <span>
+        <a href="tel:+391234567890">Telefono: +39 123 456 7890</a>
+      </span>
+    </footer>
   </body>
 </html>

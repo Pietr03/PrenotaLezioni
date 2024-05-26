@@ -1,44 +1,51 @@
-.cards{
-    display: flex;
+.cards {
+  display: flex;
 
-    flex-wrap: wrap;
-    justify-content:center;
-    gap: 10px;
-    max-width: 500px;
-    margin: 0 auto;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  max-width: 500px;
+  margin: 0 auto;
 }
 
 .card {
-    width: 15em;
-    border: 2px solid;
-    color: #059862;
-    overflow: hidden;
-    text-align: center;
-    margin: 10px;
-    background-color: #eaf6f6;
-    text-decoration:wavy;
-    padding: 3px;
-    border-radius: 5px;
+  width: 15em;
+  border: 2px solid;
+  color: #059862;
+  overflow: hidden;
+  text-align: center;
+  margin: 10px;
+  background-color: #eaf6f6;
+  text-decoration: wavy;
+  padding: 3px;
+  border-radius: 5px;
 }
 .card:hover {
-    box-shadow: 0 10px 10px rgba(21, 21, 21, 0.468);
-    border: none;
-    transition: 0.5s;
-  }
-
-
-.popover {
-    width: fit-content;
-    height: fit-content;
-    padding: 5px 20px;
-    max-width: 300px;
-
-    border-radius: 5px;
-    background-color: #eaf6f6;
-    color: black;
-    border: 0px;
-
-    box-shadow: 0 10px 10px rgba(21, 21, 21, 0.468);
+  box-shadow: 0 10px 10px rgba(21, 21, 21, 0.468);
+  border: none;
+  transition: 0.5s;
 }
 
+.popover {
+  width: fit-content;
+  height: fit-content;
+  padding: 5px 20px;
+  max-width: 300px;
 
+  border-radius: 5px;
+  background-color: #eaf6f6;
+  color: black;
+  border: 0px;
+
+  box-shadow: 0 10px 10px rgba(21, 21, 21, 0.468);
+}
+
+.reduced-card {
+  max-width: fit-content;
+  padding: 10px 20px;
+  margin: 5px;
+}
+.reduced-card:hover {
+  transform: scale(1.1);
+  transition: 0.3s;
+}

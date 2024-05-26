@@ -1,27 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
     <script src="./Componenti/NavBar.js"></script>
     <script src="./Componenti/Footer.js"></script>
-    
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="./Stili/CardPopover.css" />
-    <link rel="stylesheet" href="./Stili/Footer.css" />
+    <script src="./script.js"></script>
 
-    <style>
-        button {
-            padding: 100px;
-        }
-        
-    </style>
-</head>
-<body>
-    <nav-bar></nav-bar>
-    <button>testo</button>
-    <footer-custom></footer-custom>
-</body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <img
+        class="logo"
+        src="./Media/logo.png"
+        alt="logo"
+        width="25px"
+        height="25px"
+      />
+      <ul>
+        <li id="index"><a href="./index.html">Home</a></li>
+        <li id="pag1"><a href="./pag1.html">Pag 1</a></li>
+        <li id="pag2"><a href="./pag2.html">Pag 2</a></li>
+      </ul>
+    </div>
+    <div class="layout-container">
+      <div class="container side-panel">
+        <h2>Chi sono</h2>
+        <hr />
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum fugiat
+          eveniet libero? Animi doloribus ipsum nesciunt ex, illo saepe eos
+          aspernatur rerum laudantium, corporis nostrum et nam asperiores
+          voluptatem rem expedita autem odit nisi perspiciatis non, fuga sint
+          dicta possimus.
+        </p>
+      </div>
+      <div class="container main-panel">
+        <h2>Materie</h2>
+        <hr />
+        <div class="cards full-width">
+          <div class="card reduced-card">Matematica</div>
+          <div class="card reduced-card">Matematica</div>
+          <div class="card reduced-card">Matematica</div>
+          <div class="card reduced-card">Matematica</div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <span class="email">
+        <a href="mailto:example@mail.it">Email: example@mail.it</a>
+      </span>
+      <span class="telefono">
+        <a href="tel:+391234567890">Telefono: +39 123 456 7890</a>
+      </span>
+    </footer>
+  </body>
 </html>

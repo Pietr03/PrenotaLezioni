@@ -1,21 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
     <script src="./Componenti/NavBar.js"></script>
     <script src="./Componenti/Footer.js"></script>
-    
+    <script src="./script.js"></script>
+
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="./Stili/CardPopover.css" />
-    <link rel="stylesheet" href="./Stili/Footer.css" />
 
-</head>
-<body>
-    <nav-bar></nav-bar>
-    <footer-custom></footer-custom>
+    <!-- Esempio di inclusione di FullCalendar tramite CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.0/main.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/fullcalendar@5.10.0/main.min.js"></script>
+  </head>
+  <body>
+    <div class="navbar">
+      <img
+        class="logo"
+        src="./Media/logo.png"
+        alt="logo"
+        width="25px"
+        height="25px"
+      />
+      <ul>
+        <li id="index"><a href="./index.html">Home</a></li>
+        <li id="pag1"><a href="./pag1.html">Pag 1</a></li>
+        <li id="pag2"><a href="./pag2.html">Pag 2</a></li>
+      </ul>
+    </div>
 
-</body>
+    <div id="calendar"></div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        var calendarEl = document.getElementById("calendar");
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+          // Opzioni del calendario
+          initialView: "dayGridMonth", // Visualizza il mese come vista iniziale
+          // Altre opzioni e configurazioni
+        });
+        calendar.render();
+      });
+    </script>
+
+    <footer class="footer">
+      <span class="email">
+        <a href="mailto:example@mail.it">Email: example@mail.it</a>
+      </span>
+      <span class="telefono">
+        <a href="tel:+391234567890">Telefono: +39 123 456 7890</a>
+      </span>
+    </footer>
+  </body>
 </html>
