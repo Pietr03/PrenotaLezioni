@@ -1,3 +1,4 @@
+@import url("./Stili/ColorPalette.css");
 @import url("./Stili/Container.css");
 @import url("./Stili/CardPopover.css");
 @import url("./Stili/Footer.css");
@@ -9,7 +10,7 @@ body {
 }
 
 h1 {
-  color: #059862;
+  color: var(--primary);
 }
 
 .banner {
@@ -24,4 +25,32 @@ a {
 .full-width {
   max-width: 100%;
   width: 100%;
+}
+
+.tabella,
+.tabella th,
+.tabella td {
+  margin: 0;
+  padding: 3px;
+
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+.tabella tr:nth-child(even) {
+  background-color: rgb(236, 236, 236);
+}
+
+.tabella tr:nth-child(odd) {
+  background-color: rgb(213, 213, 213);
+}
+
+.tabella th {
+  min-width: 80px;
+}
+.tabella {
+  max-width: 100%;
+}
+
+p {
+  color: var(--quinary);
 }

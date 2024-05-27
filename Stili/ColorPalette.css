@@ -1,0 +1,13 @@
+:root {
+  /* sezioni chiare */
+  --primary: #059862;
+  --secondary: #d9eee1;
+  --tertiary: #eaf6f6;
+  --quaternary: #117b54;
+  --quinary: #000000;
+
+  /*sezioni scure*/
+  --dark-primary: #fff;
+  --dark-secondary: #03ce83;
+  --dark-tertiary: #282a35;
+}
