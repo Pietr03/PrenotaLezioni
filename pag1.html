@@ -1,26 +1,45 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
 
-    <script src="./Componenti/NavBar.js"></script>
-    <script src="./Componenti/Footer.js"></script>
     <script src="./script.js"></script>
 
     <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
-    <div class="navbar" style="max-height: 25px">
+    <div class="navbar">
       <img class="logo" src="./Media/logo.png" alt="logo" />
       <ul>
         <li id="index"><a href="./index.html">Home</a></li>
-        <li id="pag1"><a href="./pag1.html">Pag 1</a></li>
-        <li id="pag2"><a href="./pag2.html">Pag 2</a></li>
+        <li id="pag1"><a href="./pag1.html">Materie</a></li>
+        <li id="pag2"><a href="./pag2.html">Contattaci</a></li>
       </ul>
     </div>
+
     <div class="layout-container">
+      <div class="container main-panel">
+        <h2>Materie</h2>
+        <hr />
+        <div class="cards">
+          <button class="card reduced-card" popovertarget="chi-sono">
+            <h3>Chi sono</h3>
+            <div popover class="popover" id="chi-sono">
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                Dolorem, consequatur.
+              </p>
+            </div>
+          </button>
+
+          <div class="card reduced-card">Matematica</div>
+          <div class="card reduced-card">Matematica</div>
+          <div class="card reduced-card">Matematica</div>
+        </div>
+      </div>
       <div class="container side-panel">
         <h2>Chi sono</h2>
         <hr />
@@ -31,16 +50,6 @@
           voluptatem rem expedita autem odit nisi perspiciatis non, fuga sint
           dicta possimus.
         </p>
-      </div>
-      <div class="container main-panel">
-        <h2>Materie</h2>
-        <hr />
-        <div class="cards full-width">
-          <div class="card reduced-card">Matematica</div>
-          <div class="card reduced-card">Matematica</div>
-          <div class="card reduced-card">Matematica</div>
-          <div class="card reduced-card">Matematica</div>
-        </div>
       </div>
     </div>
 

@@ -1,6 +1,5 @@
 .cards {
   display: flex;
-
   flex-wrap: wrap;
   justify-content: center;
   gap: 10px;
@@ -16,11 +15,12 @@
   text-align: center;
   margin: 10px;
   background-color: var(--tertiary);
-  text-decoration: wavy;
   padding: 3px;
   border-radius: 5px;
 }
 .card:hover {
+  /*box-shadow: [inset] [offset-x] [offset-y] [blur-radius] [spread-radius] [color];*/
+
   box-shadow: 0 10px 10px rgba(21, 21, 21, 0.468);
   border: none;
   transition: 0.5s;

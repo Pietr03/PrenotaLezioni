@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Inserisci la tua età:</p>
+    <input type="number" id="eta" />
+    <button onclick="inviaRisposta()">Invio</button>
+    Risultato: <span id="risultato"></span>
+
+    <script>
+      function inviaRisposta() {
+        const risultato = document.getElementById("eta").value;
+        console.log(risultato);
+        if (risultato >= 18) {
+          document.getElementById("risultato").innerText = "Maggiorenne";
+        } else if (risultato < 0) {
+          alert("Numero non valido");
+        } else {
+          document.getElementById("risultato").innerText = "Minorenne";
+        }
+      }
+    </script>
+  </body>
+</html>

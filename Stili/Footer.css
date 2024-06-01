@@ -8,15 +8,16 @@
   justify-content: space-around;
   display: flex;
 }
+
 .footer span {
   margin: 0;
   padding: 20px;
   color: var(--dark-primary);
 }
-
 .footer a {
   color: var(--dark-primary);
 }
+
 .footer a:hover {
   color: var(--dark-secondary);
   transition: 0.2s;
