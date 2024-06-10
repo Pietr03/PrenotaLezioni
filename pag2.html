@@ -106,6 +106,83 @@
             </td>
           </tr>
         </table>
+        <br />
+        <form action="./result.html" method="GET" enctype="multipart/form-data">
+          <fieldset>
+            <legend>Nome</legend>
+            <label for="name">Inserisci il nome:</label>
+            <input type="text" name="name" id="name" required />
+          </fieldset>
+          <fieldset>
+            <legend>Cognome</legend>
+            <label for="lastname">Inserisci il cognome:</label>
+            <input type="text" name="lastname" id="lastname" required />
+          </fieldset>
+          <fieldset>
+            <legend>Password</legend>
+            <label for="pw">Inserisci la password:</label>
+            <input
+              type="password"
+              name="pw"
+              id="pw"
+              maxlength="10"
+              minlength="6"
+            />
+          </fieldset>
+
+          <fieldset>
+            <legend>Email</legend>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required />
+          </fieldset>
+          <fieldset>
+            <legend>Telefono</legend>
+            <label for="telefono">Telefono:</label>
+            <input type="tel" name="telefono" id="telefono" required />
+          </fieldset>
+          <div>
+            <label for="data">Data di nascita:</label>
+            <input type="date" name="data" id="data" required />
+          </div>
+          <div>
+            <label for="genere">Genere:</label>
+            <input type="radio" name="genere" id="maschio" />
+            <label for="maschio">maschio</label>
+            <input type="radio" name="genere" id="femmina" />
+            <label for="femmina">femmina</label>
+          </div>
+
+          <div>
+            <br />
+            <label for="materie">Materie(più selezionabili):</label>
+            <select name="materie" id="" multiple>
+              <option value="matematica">matematica</option>
+              <option value="italiano">italiano</option>
+              <option value="storia">storia</option>
+              <option value="inglese">inglese</option>
+            </select>
+            <br />
+            <br />
+            <label for="materia">Materia(solo una selezionabile):</label>
+            <select name="materia" id="">
+              <option value="matematica">matematica</option>
+              <option value="italiano">italiano</option>
+              <option value="storia">storia</option>
+              <option value="inglese">inglese</option>
+            </select>
+          </div>
+          <div>
+            <br />
+            <label for="note">Note:</label>
+            <textarea name="note" id=""></textarea>
+          </div>
+          <div>
+            <label for="file">Allega documento: </label>
+            <input type="file" name="file" id="file" />
+          </div>
+          <input type="reset" value="Reset" />
+          <input type="submit" value="Invia" />
+        </form>
       </div>
     </div>
 

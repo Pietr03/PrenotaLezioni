@@ -1,5 +1,5 @@
 .navbar {
-  background-color: var(--secondary);
+  background-color: var(--primary-foreground);
   width: 100%;
   display: flex;
   padding: 3px 6px;
@@ -24,8 +24,8 @@
 }
 
 .navbar a:hover {
-  color: var(--tertiary);
-  background-color: var(--primary);
+  color: var(--secondary-foreground);
+  background-color: var(--secondary);
   transition: 0.2s;
 }
 
@@ -41,6 +41,6 @@
 }
 
 .navbar .active a {
-  background-color: var(--quaternary);
-  color: var(--tertiary);
+  background-color: var(--primary);
+  color: var(--primary-foreground);
 }

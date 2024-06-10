@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sito web</title>
+
+    <link rel="icon" type="image/x-icon" href="Media/logo.png" />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="navbar">
+      <img
+        class="logo"
+        src="./Media/logo.png"
+        alt="logo"
+        width="25px"
+        height="25px"
+      />
+      <ul>
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./pag1.html">Materie</a></li>
+        <li><a href="./pag2.html">Contattaci</a></li>
+      </ul>
+    </div>
+
+    <div class="banner">
+      <h1 class="titolo">Benvenuto</h1>
+      <p>
+        <strong> Lorem </strong>
+        ipsum dolor sit amet consectetur adipisicing elit. Voluptate,
+        repellendus!
+      </p>
+    </div>
+
+    <div class="cards">
+      <button class="card" popovertarget="chi-sono">
+        <h3>Chi sono</h3>
+        <div popover class="popover" id="chi-sono">
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorem,
+            consequatur.
+          </p>
+        </div>
+      </button>
+
+      <a href="./pag1.html">
+        <button class="card">
+          <h3>Materie</h3>
+        </button>
+      </a>
+
+      <button class="card" popovertarget="info-prezzi">
+        <h3>Info e prezzi</h3>
+        <div popover class="popover" id="info-prezzi">
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing.</p>
+        </div>
+      </button>
+    </div>
+
+    <div class="immagine">
+      <img src="./Media/banner.webp" alt="" width="500px" />
+    </div>
+
+    <footer class="footer">
+      <span>
+        <a href="mailto:example@mail.it">Email: example@mail.it</a>
+      </span>
+      <span>
+        <a href="tel:+391234567890">Telefono: +39 123 456 7890</a>
+      </span>
+      <label>
+        <input type="checkbox" id="theme-toggle" class="dark-switch" />
+        Dark Mode
+      </label>
+    </footer>
+    <script>
+      const switchTheme = document.getElementById("theme-toggle");
+
+      switchTheme.addEventListener("change", function () {
+        if (this.checked) {
+          document.documentElement.classList.add("dark");
+        } else {
+          document.documentElement.classList.remove("dark");
+        }
+      });
+    </script>
+  </body>
+</html>
+
+<!--
+    <script>
+      window.addEventListener("unload", function () {
+        alert("Ciao mondo");
+      });
+      document.querySelectorAll("button").forEach(function (button) {
+        button.addEventListener("click", function () {
+          alert("Ciao mondo");
+        });
+      });
+    </script>
+    
+  <script src="./script.js"></script>
+
+    <link rel="stylesheet" href="./Stili/ColorPalette_white.css" />
+    <link rel="stylesheet" href="./Stili/ColorPalette_black.css" />
+-->

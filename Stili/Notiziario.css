@@ -1,0 +1,25 @@
+section {
+  border: 1px solid blue;
+  width: 70%;
+  margin: auto; /* mette il blocco al centro */
+}
+section article {
+  display: flex;
+  flex-direction: row;
+  width: 98%;
+  margin: 1%;
+  background-color: #ffb65c;
+  border-radius: 0px;
+}
+section article figure {
+  width: 80%;
+}
+section article figure img {
+  width: 100%;
+}
+section article button {
+  font-size: 30px;
+}
+.centrato {
+  text-align: center;
+}

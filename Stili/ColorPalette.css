@@ -1,13 +1,37 @@
+:root,
+:root.light {
+  --bg-color: #fff;
+  --text-color: #123;
+
+  --primary: #2e9a70; /* Verde primario più chiaro */
+  --primary-foreground: #d9eee1;
+  --secondary: #81c297; /* Verde secondario più chiaro */
+  --secondary-foreground: #eaf6f6; /* Bianco chiaro per il contrasto */
+  --tertiary: #f7f7f7; /* Bianco leggermente schiarito */
+  --tertiary-foreground: #282a35; /* Nero per alta leggibilità */
+}
+
+:root.dark {
+  --bg-color: #1f1f1f;
+  --text-color: #fff;
+
+  --primary: #c1f6d8; /* Verde primario invertito */
+  --primary-foreground: #282a35; /* Nero per alta leggibilità */
+  --secondary: #7e3c69; /* Verde secondario invertito */
+  --secondary-foreground: #eaf6f6; /* Bianco chiaro per il contrasto */
+  --tertiary: #333; /* Grigio scuro leggermente schiarito */
+  --tertiary-foreground: #d8deff; /* Nero per alta leggibilità */
+}
+/*
 :root {
-  /* sezioni chiare */
   --primary: #059862;
   --secondary: #d9eee1;
   --tertiary: #eaf6f6;
   --quaternary: #117b54;
   --quinary: #000000;
 
-  /*sezioni scure*/
   --dark-primary: #fff;
   --dark-secondary: #03ce83;
   --dark-tertiary: #282a35;
 }
+*/

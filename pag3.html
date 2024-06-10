@@ -4,25 +4,62 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./Stili/Notiziario.css" />
   </head>
   <body>
-    <p>Inserisci la tua età:</p>
-    <input type="number" id="eta" />
-    <button onclick="inviaRisposta()">Invio</button>
-    Risultato: <span id="risultato"></span>
+    <h1>Notiziario</h1>
+    <!--
+    <noscript> ci mostra cosa fare se il browser
+    non carica il javascript.
+    -->
+    <noscript
+      >Attenzione Javascript è disabilitato. Lo scorrimento delle notizie non
+      funziona.</noscript
+    >
 
-    <script>
-      function inviaRisposta() {
-        const risultato = document.getElementById("eta").value;
-        console.log(risultato);
-        if (risultato >= 18) {
-          document.getElementById("risultato").innerText = "Maggiorenne";
-        } else if (risultato < 0) {
-          alert("Numero non valido");
-        } else {
-          document.getElementById("risultato").innerText = "Minorenne";
-        }
-      }
-    </script>
+    <!--
+    <div> e <section> sono simili, però <section> è più
+    specifico perché indica che il contenuto all'interno
+    è tematicamente correlato e autonomo.
+    -->
+    <section>
+      <!--
+      <article> è simile a <section>, ma ha un utilizzo più
+        specifico per gli articoli, ad esempio scrivendo
+        un blog, ogni singolo post potrebbe essere
+        racchiuso in un <article>.
+      -->
+      <article>
+        <button id="indietro">
+          &lang;
+          <!-- left angle: indietro -->
+        </button>
+        <!--
+        <figure> è come una cornice per un'immagine 
+          che vogliamo mostrare nella nostra pagina web,
+          come una foto o un grafico. 
+        <figcaption> è come una piccola etichetta o
+          titolo che spiega cosa c'è dentro la cornice.
+        -->
+        <figure class="centrato">
+          <figcaption id="titoloNotizia">--</figcaption>
+          <p id="testoNotizia">--</p>
+        </figure>
+        <button id="avanti">
+          &rang;
+          <!-- right angle: avanti -->
+        </button>
+      </article>
+      <div class="centrato">
+        <!--
+          <progress> è come una barra di avanzamento,
+            in questo caso mostra graficamente l'indice
+            dell'articolo che stiamo visualizzando in
+            una lista di articoli
+        -->
+        <progress id="segnaNotizie" value="1" max="5"></progress>
+      </div>
+    </section>
+    <script src="./Scripts/notiziario.js"></script>
   </body>
 </html>

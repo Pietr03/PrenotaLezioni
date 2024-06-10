@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="titolo">ciao persona</h1>
+    <div id="results"></div>
+    <a href="/index.html">Torna alla Home</a>
+    <script>
+      /*
+      const result = document.getElementById("results");
+      new URLSearchParams(window.location.search).forEach((value, key) => {
+        result.innerHTML += `${key}: ${value}<br>`;
+      });*/
+
+      // Ottieni la stringa dei parametri dall'URL
+      const queryString = window.location.search;
+      // Crea un oggetto URLSearchParams con la stringa dei parametri
+      const params = new URLSearchParams(queryString);
+      // Estrai il valore del parametro "param1"
+      const nome = params.get("name");
+
+      nome = nome === "" ? "persona" : nome;
+
+      document.getElementById("titolo").innerText = "ciao " + nome;
+    </script>
+  </body>
+</html>
